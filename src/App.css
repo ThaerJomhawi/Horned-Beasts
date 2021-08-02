@@ -6,26 +6,23 @@ header{
   background-color: blue;
   color: white;
 }
-main{
-  margin: auto;
-  padding: 10px;
+
+
+.card{
   justify-content: center;
-  align-items: center;
   text-align: center;
+  align-items:center;
 }
-
-img {
-  width: 200px;
-  height: 200px;
+.card-img{
+  width:16rem;
+  height: 10rem;
+  padding:5px;
+  padding-top: 10px;
 }
-
 
 footer{
-  
   justify-content: center;
   text-align: center;
   background-color: blue;
   color: white;
-
- 
 }
