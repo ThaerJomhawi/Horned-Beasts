@@ -20,6 +20,10 @@ header{
   padding-top: 10px;
 }
 
+.votebutton{
+  cursor: pointer;
+}
+
 footer{
   justify-content: center;
   text-align: center;

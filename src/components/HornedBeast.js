@@ -1,9 +1,12 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card'
 class HornedBeast extends React.Component {
-  state = {
-    stateVotes: 0
-  }
+  constructor(props){
+    super(props);
+    this.state={
+    stateVotes:0
+    }
+    }
 
   raiseVotes = () => {
     this.setState({
@@ -15,7 +18,7 @@ class HornedBeast extends React.Component {
     const { title, imageUrl, description } = this.props;
     return (
       <Card className="mb-5" style={{ width: '18rem' }}>
-        <Card.Img className="card-img" variant="top" src={imageUrl} alt={title} onClick={() => { this.raiseVotes() }} />
+        <Card.Img className="card-img" variant="top" src={imageUrl} alt={title}  />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>
@@ -23,7 +26,8 @@ class HornedBeast extends React.Component {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          {this.state.stateVotes}
+        <span className='votebutton' onClick={() => { this.raiseVotes() }} >💜       </span> 
+        {this.state.stateVotes}          
         </Card.Footer>
       </Card>
     );
