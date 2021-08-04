@@ -24,11 +24,11 @@ class HornedBeast extends React.Component {
   };
 
   render() {
-    const { title, imageUrl, description } = this.props;
+    const { title, imageUrl, description, horn } = this.props;
     return (
       <div>
         <Card className="mb-5" style={{ width: '18rem' }}>
-          <Card.Img  className="card-img" variant="top" src={imageUrl} alt={title} onClick={this.handleShow} />
+          <Card.Img className="card-img" variant="top" src={imageUrl} alt={title} onClick={this.handleShow} />
           <Card.Body>
             <Card.Title>{title}</Card.Title>
             <Card.Text>
@@ -45,6 +45,7 @@ class HornedBeast extends React.Component {
           title={title}
           imageUrl={imageUrl}
           description={description}
+          horn={horn}
           handleClose={this.handleClose}
           show={this.state.showModal}
         />
